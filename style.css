@@ -84,7 +84,7 @@ nav ul {
 }
 
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:800px) {
     body {
         margin-bottom: 100px;
     }
@@ -105,6 +105,9 @@ nav ul {
 
     .box {
         font-size: 24vw;
+    }
+    .box:hover {
+        background-color: white;
     }
 
     .GameInfo {
