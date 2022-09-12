@@ -84,7 +84,7 @@ nav ul {
 }
 
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:768px) {
     body {
         margin-bottom: 100px;
     }
@@ -111,7 +111,7 @@ nav ul {
     }
 
     .GameInfo {
-        margin-top: 20px 15px;
+        margin-top: 30px 15px;
         text-align:
     }
 
