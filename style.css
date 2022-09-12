@@ -84,7 +84,7 @@ nav ul {
 }
 
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:1000px) {
     body {
         margin-bottom: 100px;
     }
