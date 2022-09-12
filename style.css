@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    margin-bottom:100px;
+}
+
 nav {
     height: 55px;
     background-color: #000;
@@ -27,14 +31,14 @@ nav ul {
 
 .container {
     display: grid;
-    grid-template-rows: repeat(3, 10vw);
-    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 25vw);
+    grid-template-columns: repeat(3, 25vw);
     font-family: Impact;
 }
 
 .box {
     border: 2px solid black;
-    font-size: 8vw;
+    font-size: 21vw;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -47,6 +51,15 @@ nav ul {
 
 .GameInfo {
     padding: 0 40px;
+}
+
+.info {
+    font-size: 6vw;
+}
+
+.GameInfo>h1 {
+    font-size: 10vw;
+    margin:5px 10px;
 }
 
 .lb0 {
@@ -72,6 +85,9 @@ nav ul {
     color: white;
     border: none;
     border-radius: 2px;
+    height: 10vw;
+    font-size:8vw;
+    padding:0px 5px;
 }
 
 #reset:hover {
@@ -85,16 +101,12 @@ nav ul {
 
 
 @media screen and (max-width:768px) {
-    body {
-        margin-bottom: 100px;
-    }
-
     nav {
         height: 10vw;
         font-size: 8vw;
     }
 
-    .GameContainer {
+/*    .GameContainer {
         flex-wrap: wrap;
     }
 
@@ -105,12 +117,12 @@ nav ul {
 
     .box {
         font-size: 21vw;
-    }
+    }*/
     .box:hover {
-        background-color: white;
+        background-color: rgba(0,0,0,0);
     }
 
-    .GameInfo {
+/*    .GameInfo {
         margin-top: 30px 15px;
         text-align:
     }
@@ -128,5 +140,5 @@ nav ul {
         height: 10vw;
         font-size: 8vw;
         padding: 0px 5px;
-    }
+    }*/
 }
