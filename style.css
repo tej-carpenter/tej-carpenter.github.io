@@ -99,19 +99,20 @@ nav ul {
     }
 
     .container {
-        grid-template-rows: repeat(3, 30vw);
-        grid-template-columns: repeat(3, 30vw);
+        grid-template-rows: repeat(3, 25vw);
+        grid-template-columns: repeat(3, 25vw);
     }
 
     .box {
-        font-size: 24vw;
+        font-size: 21vw;
     }
     .box:hover {
         background-color: white;
     }
 
     .GameInfo {
-        margin-top: 20px;
+        margin-top: 20px 15px;
+        text-align:
     }
 
     .info {
@@ -126,5 +127,6 @@ nav ul {
     #reset {
         height: 10vw;
         font-size: 8vw;
+        padding: 0px 5px;
     }
 }
