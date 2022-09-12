@@ -1,11 +1,8 @@
-# tej-carpenter.github.io
+# Tic Tac Toe
 <head>
     <style>
 
         * { margin: 0; padding: 0; }
-
-        nav { height: 55px; background-color:#000; color:white; display:flex; align-items:center; font-size:35px; font-family:fantasy; padding:6px 15px; }
-        nav ul { list-style:none; }
 
         .GameContainer {display:flex; justify-content:center; margin-top:50px;}
 
@@ -28,11 +25,6 @@
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li>Tic Tac Toe</li>
-        </ul>
-    </nav>
 
     <div class="GameContainer">
         <div class="container">
