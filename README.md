@@ -1,4 +1,3 @@
-# Tic Tac Toe
 <head>
     <style>
 
