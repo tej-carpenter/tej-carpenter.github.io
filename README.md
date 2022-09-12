@@ -1,11 +1,7 @@
 # tej-carpenter.github.io
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="vieport" content="width=device-width, initial-scale=1">
-    <title>Tic-Tac-Toe | Tej Prakash Carpenter</title>
     <style>
+
         * { margin: 0; padding: 0; }
 
         nav { height: 55px; background-color:#000; color:white; display:flex; align-items:center; font-size:35px; font-family:fantasy; padding:6px 15px; }
@@ -30,6 +26,7 @@
         #reset:active { background-color:black; color:white; }
 </style>
 </head>
+
 <body>
     <nav>
         <ul>
@@ -61,4 +58,3 @@
         </div>
     </div>
 </body>
-</html>
