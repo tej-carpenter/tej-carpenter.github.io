@@ -45,10 +45,6 @@ nav ul {
     align-items: center;
 }
 
-.box:hover {
-    background-color: rgba(128, 128, 128, 0.35);
-}
-
 .GameInfo {
     padding: 0 40px;
 }
@@ -108,10 +104,6 @@ nav ul {
     nav {
         height: 10vw;
         font-size: 8vw;
-    }
-    
-    .box:hover {
-        background-color: rgba(0,0,0,0);
     }
 
 /*    .GameContainer {
