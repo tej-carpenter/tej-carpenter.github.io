@@ -1,65 +1,96 @@
 * {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
+  font-family: cursive;
+  text-align: center;
+  transition: 0.2s;
+}
 
-  body {
-    background-image: url(images/Text-Manipulator-Background-2.png);
-    background-attachment: fixed;
-    background-size: contain;
-  }
+body {
+  background-image: url(images/Text-Manipulator-Background-2.png);
+  background-attachment: fixed;
+  background-size: contain;
+}
 
-  h1 {
-    color: rgb(222, 111, 0);
-    font-family: cursive;
-  }
+h1 {
+  color: rgb(222, 111, 0);
+}
 
-  textarea {
-    max-width: 90%;
-    max-height: 500px;
-    min-width: 30%;
-    min-height: 100px;
-    border-width: 10px;
-    border-color: rgb(222, 111, 0);
-    border-top: none;
-    border-bottom: none;
-    border-style: solid;
-    border-radius: 20px;
-    background-color: rgba(187, 255, 0, 0.4);
-    padding-left: 10px;
-    color: rgb(61, 6, 47);
-  }
+textarea {
+  max-width: 90%;
+  max-height: 500px;
+  min-width: 30%;
+  min-height: 100px;
+  border-width: 10px;
+  border-color: rgb(222, 111, 0);
+  border-top: none transparent;
+  border-bottom: none transparent;
+  border-style: double;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: rgba(187, 255, 0, 0.409);
+  padding-left: 10px;
+  color: rgb(61, 6, 47);
+}
 
-  .btn {
-    background-color: rgb(222, 111, 0);
-    border: none;
-    padding: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    border-radius: 15px;
-  }
-  button:hover {
-    background-color: rgb(255, 174, 0);
-  }
-  button:active {
-    background-color: black;
-    color: white;
-  }
+.btn {
+  background-color: rgb(222, 111, 0);
+  border: none;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
 
-  .footer {
-    text-align: left;
-  }
-  #footer-image {
-    float: left;
-    height: 30px;
-    margin-top: 5px; padding-top: 5px;
-    margin: 5px;
-    margin-bottom: none;
-  }
-  #footer-image:hover {
-    height: 40px;
-    margin-top: none;
-    padding-top: none;
-  }
+button:hover {
+  background-color: rgb(255, 174, 0);
+  border-radius: 15px;
+}
+
+button:active {
+  color: white;
+  background-color: black;
+}
+
+.disk {
+  text-align: none;
+  z-index: 1;
+  float: right;
+  background-color: rgba(56, 150, 176, 0.600);
+  border: none;
+  border-bottom-left-radius: 50px;
+  height: 50px;
+  width: 50px;
+}
+
+.disk:hover {
+  background-color: rgb(56, 150, 176);
+}
+
+.disk:active {
+  background-color: rgb(56, 150, 176);
+  height: 80px;
+  width: 80px;
+  border-bottom-left-radius: 80px;
+}
+
+.footer {
+  justify-content: center;
+}
+
+#footer-image {
+  transition: 0.1s;
+  /* float: left; */
+  height: 30px;
+  margin-top: 5px;
+  padding-top: 5px;
+  margin: 5px;
+  margin-bottom: none;
+}
+
+#footer-image:hover {
+  height: 40px;
+  margin-top: none;
+  padding-top: none;
+}
