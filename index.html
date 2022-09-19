@@ -1,39 +1,170 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="vieport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2080630083160902" crossorigin="anonymous"></script>
-    <title>Home | Tej Prakash Carpenter</title>
+    <!-- <meta http-equiv="refresh" content="3; URL=https://google.com" /> -->
+    <title>Animations | Tej Prakash Carpenter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(36, 33, 33);
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        nav {
+            background-color: whitesmoke;
+            height: 50px;
+            font-size: 45px;
+            padding: 5px 10px;
+        }
+
+        nav>ul {
+            list-style-type: none;
+        }
+
+        nav>ul>li>span#homeText,
+        img.navImage#home {
+            padding-left: 15px;
+            float: left;
+            overflow: hidden;
+        }
+
+        nav>ul>li>input {
+            background-color: whitesmoke;
+            margin-right: 8px;
+            width: 26%;
+            height: 45px;
+            float: right;
+            border: 2px solid grey;
+            border-radius: 5px;
+            font-size: 35px;
+            transition: 0.5s;
+            padding: 0 25px;
+        }
+
+        nav>ul>li>input:hover,
+        nav>ul>li>input:active {
+            border-color: black;
+        }
+
+        img.navImage {
+            padding-right: 25px;
+            height: 50px;
+            float: right;
+            border: none;
+        }
+
+        .animations {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: relative;
+        }
+
+        .selectionAnimation {
+            transition: 0.5s;
+            display: block;
+            height: 350px;
+            width: 300px;
+            color: black;
+            font-size: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Courier, monospace;
+            text-align: center;
+            text-decoration: none;
+            /* position: absolute; */
+        }
+
+        .first {
+            background-color: rgb(255, 94, 0);
+        }
+
+        .second {
+            background-color: rgb(55, 0, 255);
+        }
+
+        .first:hover {
+            background-color: rgb(255, 94, 50);
+        }
+
+        .second:hover {
+            background-color: rgb(55, 0, 155);
+        }
+
+        .selectionAnimation:hover,
+        .selectionAnimation:active,
+        .selectionAnimation:visited {
+            width: 350px;
+            color: white;
+            cursor: pointer;
+
+        }
+
+        @media screen and (max-width: 768px) {
+            nav {
+                height: 20px;
+                font-size: 17px;
+                padding: 4px 8px;
+            }
+
+            img.navIMage , body>nav>ul>li>img  {
+                height: 65px;
+            }
+
+            .animations {
+                justify-content: center;
+            }
+
+            .selectionAnimation {
+                height: 70px;
+                width: 600px;
+                font-size: 60px;
+            }
+
+            .selectionAnimation:hover {
+                width: 700px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <nav>Tej Prakash Carpenter</nav>
-    <div class="page-container">
-        <a href="Tic-Tac-Toe">
-            <div class="container tic-tac-toe">
-                <div class="content">
-                    <iframe src="Tic-Tac-Toe" frameborder="0"></iframe>
-                </div>
-                <div class="description">
-                    <span class="title">Tic Tac Toe</span>
-                    <br>Play Tic Tac Toe annd enjoy.
-                </div>
-            </div>
+    <nav>
+        <ul>
+            <li><a href="index.html"><img src="Home-Bold.png" class="navImage" alt="Home" id="home"></a></li>
+            <li><img src="Menu-Light.png" class="navImage" alt="Menu" id="menu"></li>
+            <li><img src="Profile-Picture.png" class="navImage" alt="Profile" id="profile"></li>
+            <li><img src="Search-bold.png" class="navImage" alt="Search" id="search"><input type="text" name="search"
+                    id="searchbar"></li>
+            <li><a href="index.html"><span id="homeText">Tej Prakash</span></a></li>
+        </ul>
+    </nav>
+
+    <div class="animations">
+        <a href="http://tej-carpenter.github.io/Tic-Tac-Toe" target="_blank">
+            <div class="selectionAnimation first">Tic Tac Toe</div>
         </a>
-        <a href="Text-Manipulator">
-            <div class="container text-manipulator">
-                <div class="content">
-                    <iframe src="Text-Manipulator" frameborder="0"></iframe>
-                </div>
-                <div class="description">
-                    <span class="title">Text Manipulator</span>
-                    <br>Manipulate Text, Remove spaces, line breakes and more.
-                </div>
-            </div>
+        <a href="http://tej-carpenter.github.io/Text-Manipulator" target="_blank">
+            <div class="selectionAnimation second">Text<br>Manipulator</div>
+        </a>
+        <a href="http://tej-carpenter.github.io/ToDo-List" target="_blank">
+            <div class="selectionAnimation first">To Do<br>List</div>
+        </a>
+        <a href="http://tej-carpenter.github.io/Sudoku" target="_blank">
+            <div class="selectionAnimation second">Sudoku</div>
         </a>
     </div>
+
 </body>
+
 </html>
