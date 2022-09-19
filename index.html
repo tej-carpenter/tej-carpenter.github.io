@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
@@ -12,31 +11,25 @@
             margin: 0;
             padding: 0;
         }
-
         body {
             background-color: rgb(36, 33, 33);
         }
-
         a {
             color: black;
             text-decoration: none;
         }
-
         nav {
             background-color: whitesmoke;
             height: 50px;
             font-size: 45px;
             padding: 5px 10px;
         }
-
         nav>ul {
             list-style-type: none;
         }
-
         img.navImage#home {
             padding-left: 15px;
         }
-
         nav>ul>li>input {
             background-color: whitesmoke;
             margin-right: 8px;
@@ -49,26 +42,22 @@
             transition: 0.5s;
             padding: 0 25px;
         }
-
         nav>ul>li>input:hover,
         nav>ul>li>input:active {
             border-color: black;
         }
-
         img.navImage {
             padding-right: 25px;
             height: 50px;
             float: right;
             border: none;
         }
-
         .animations {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             position: relative;
         }
-
         .selectionAnimation {
             transition: 0.5s;
             display: block;
@@ -81,23 +70,18 @@
             text-decoration: none;
             /* position: absolute; */
         }
-
         .first {
             background-color: rgb(255, 94, 0);
         }
-
         .second {
             background-color: rgb(55, 0, 255);
         }
-
         .first:hover {
             background-color: rgb(255, 94, 50);
         }
-
         .second:hover {
             background-color: rgb(55, 0, 155);
         }
-
         .selectionAnimation:hover,
         .selectionAnimation:active,
         .selectionAnimation:visited {
@@ -108,7 +92,6 @@
         }
     </style>
 </head>
-
 <body>
     <nav>
         <ul>
@@ -119,7 +102,6 @@
                     id="searchbar"></li>
         </ul>
     </nav>
-
     <div class="animations">
         <a href="http://tej-carpenter.github.io/Tic-Tac-Toe" target="_blank">
             <div class="selectionAnimation first">Tic Tac Toe</div>
@@ -134,7 +116,5 @@
             <div class="selectionAnimation second">Sudoku</div>
         </a>
     </div>
-
 </body>
-
 </html>
