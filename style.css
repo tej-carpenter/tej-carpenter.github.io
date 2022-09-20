@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(59, 55, 55);
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+nav {
+  background-color: whitesmoke;
+  height: 50px;
+  font-size: 45px;
+  padding: 5px 10px;
+}
+nav>ul {
+  list-style-type: none;
+}
+nav>ul>li>span#homeText,
+img.navImage#home {
+  padding-left: 15px;
+  float: left;
+  overflow: hidden;
+}
+nav>ul>li>input {
+  background-color: whitesmoke;
+  margin-right: 8px;
+  width: 26%;
+  height: 45px;
+  float: right;
+  border: 2px solid grey;
+  border-radius: 5px;
+  font-size: 35px;
+  transition: 0.5s;
+  padding: 0 25px;
+}
+nav>ul>li>input:hover,
+nav>ul>li>input:active {
+  border-color: black;
+}
+img.navImage {
+  padding-right: 25px;
+  height: 50px;
+  float: right;
+  border: none;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+.pageBox {
+  transition: 0.5s;
+  display: block;
+  color: black;
+  font-size: 5vw;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Courier, monospace;
+  text-align: center;
+  text-decoration: none;
+  width: 40vw;
+  height: 25vw;
+  margin: 2vw;
+  /* position: absolute; */
+}
+.first {
+  background-color: rgb(255, 94, 0);
+}
+.second {
+  background-color: rgb(55, 0, 255);
+}
+.first:hover {
+  background-color: rgb(255, 94, 50);
+}
+.second:hover {
+  background-color: rgb(55, 0, 155);
+}
+.pageBox:hover,
+.pageBox:active,
+.pageBox:visited {
+  height: 30vw;
+  width: 45vw;
+  font-size: 6vw;
+  color: white;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  input#searchbar {
+    height: 20px;
+    font-size: 17px;
+    padding: 0px 5px;
+    border: 0.4px solid;
+    border-radius: 0.4px;
+  }
+  nav {
+    font-size: 21px;
+    padding: 2px 4px;
+    height: 25px;
+  }
+  img.navImage{
+    height: 21px;
+    padding: 2px 5px;
+  }
+  .container {
+    justify-content: center;
+  }
+  div.pageBox {
+    height: 12vw;
+    width: 85vw;
+  }
+  div.pageBox:hover {
+    height: 14vw;
+    width: 85vw;
+  }
+}
+@media screen and (max-width: 360px) {
+  nav {
+    font-size: 0px;
+  }
+}
