@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(4, 4, 4, 0.75);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+nav {
+  background-color: whitesmoke;
+  height: 50px;
+  font-size: 45px;
+  padding: 5px 10px;
+}
+nav>ul {
+  list-style-type: none;
+}
+nav>ul>li>span#homeText,
+img.navImage#home {
+  padding-left: 15px;
+  float: left;
+  overflow: hidden;
+}
+nav>ul>li>input {
+  background-color: whitesmoke;
+  margin-right: 8px;
+  width: 26%;
+  height: 45px;
+  float: right;
+  border: 2px solid grey;
+  border-radius: 5px;
+  font-size: 35px;
+  transition: 0.5s;
+  padding: 0 25px;
+}
+nav>ul>li>input:hover,
+nav>ul>li>input:active {
+  border-color: black;
+}
+img.navImage {
+  padding-right: 25px;
+  height: 50px;
+  float: right;
+  border: none;
+}
+
+button {
+    display: block;
+    margin: auto;
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 68, 184);
+    color: white;
+    border: none;
+    padding: 7px 14px;
+    border-radius: 3px;
+}
+button:hover {
+    background-color: rgb(0, 52, 142);
+}
+button:active {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input#topic , textarea#description , input#removeTaskNumber {
+    display: block;
+    margin: auto;
+    background-color: rgba(4, 4, 4, 0);
+    margin-top: 17px;
+    margin-bottom: 17px;
+    padding: 4px 10px;
+    width: 90%;
+    height: 25px;
+    min-width: 90%;
+    max-width: 90%;
+    max-height: 40vw;
+    min-height: 3vw;
+    text-align: justify;
+    color: whitesmoke;
+    font-size: 22px;
+    border: 3px solid white;
+}
+textarea#description {
+    font-family: inherit;
+    height: 100px;
+    width: 95%;
+}
+
+table {
+    margin: auto;
+    width: fit-content;
+    max-width: 90%;
+    border: 3px solid white;
+    color: whitesmoke;
+    margin-top: 17px;
+    font-size: 22px;
+}
+th , td {
+    padding: 4px 10px;
+    margin: 0;
+    border: 3px solid white;
+    width: fit-content;
+}
+
+.bt0 { border-top: none; }
+.bb0 { border-bottom: none; }
+.bl0 { border-left: none; }
+.br0 { border-right: none; }
+
+@media screen and (max-width:800px) {
+    #homeText {
+        font-size: 0px;
+    }
+    input#searchbar {
+        transition: 0.5s;
+        height: 23px;
+        width: 30%;
+        border: 1px solid black;
+        border-radius: 2px;
+    }
+    nav {
+        height: 25px;
+    }
+    img.navImage {
+        height: 23px;
+        padding: 2px 5px;
+    }
+}
