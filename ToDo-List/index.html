@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="vieport" content="width=device-width, initial-scale=1">
+    <title>To Do List | Tej Prakash Carpenter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"><img src="https://user-images.githubusercontent.com/108168391/191171853-a4412d9d-2c94-48cc-b45b-759172aceef1.png" class="navImage" alt="Home" id="home"></a></li>
+            <li><img src="https://user-images.githubusercontent.com/108168391/191172041-680e964b-acf3-4a29-acd7-e5d75f709be7.png" class="navImage" alt="Menu" id="menu"></li>
+            <li><img src="https://user-images.githubusercontent.com/108168391/191172127-a28d1346-b9fc-4ae6-a82c-7047ede8b7cb.png" class="navImage" alt="Profile" id="profile"></li>
+            <li><img src="https://user-images.githubusercontent.com/108168391/191172194-ca313495-9a6e-42a5-a72a-3d5858a0e1ca.png" class="navImage" alt="Search" id="search"><input type="text" name="search" id="searchbar"></li>
+            <li><a href="index.html"><span id="homeText">Tej Prakash</span></a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="input">
+            <input type="text" id="topic" placeholder="Topic">
+            <textarea id="description" placeholder="Description"></textarea>
+            <button id="addToList">Add To List</button>
+        </div>
+        <div class="toDoList">
+            <table>
+                <thead>
+                    <th class="taskCountBox bt0 bl0">S. no.</th>
+                    <th class="topicBox bt0 ">Topic</th>
+                    <th class="descriptionBox bt0 br0">Description</th>
+                </thead>
+                <tbody>
+                </tbody>
+                <tfoot>
+                    <tr><th class="bl0 br0" colspan="3">END OF YOUR TO-DO LIST</th></tr>
+                    <tr><th class="bl0 br0" colspan="3"><button id="removeAllTasks">Remove All Tasks</button></th></tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
