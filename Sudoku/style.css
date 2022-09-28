@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     transition: 0.4s;
@@ -11,14 +11,14 @@ body{
     background-color: #e6e6e6;
 }
 
-nav{
+nav {
     background-color: whitesmoke;
     height: 50px;
     font-size: 45px;
     padding: 5px 10px;
 }
 
-nav>ul{
+nav>ul {
     list-style-type: none;
 }
 img.navImage#home {
@@ -205,6 +205,36 @@ footer{
   img.navImage{
     height: 21px;
     padding: 2px 5px;
+  }
+  .sudoku{
+    grid-template-columns: repeat(3, 30vw);
+    grid-template-rows: repeat(3, 30vw);
+  }
+  div.box{
+    grid-template-columns: repeat(3, 9.8vw);
+    grid-template-rows: repeat(3, 9.8vw);
+  }
+  .num-box{
+    font-size: 9vw;
+  }
+  .choose-number{
+    grid-template-columns: repeat(9, 10vw);
+  }
+  .choose{
+    height: 10vw;
+    font-size: 9vw;
+  }
+  button{
+    font-size: 6vw;
+  }
+  h2#normalHeading{
+    font-size: 7vw;
+  }
+  div.info > ul > li{
+    font-size: 3.5vw;
+  }
+  .divFooter > ul > li{
+    font-size: 3vw;
   }
 }
 @media screen and (max-width: 360px) {
