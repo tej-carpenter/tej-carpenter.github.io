@@ -1,6 +1,6 @@
 let selectedNumber=''
 const numberSelector=(numberChooser)=>{selectedNumber=document.querySelector(`div.choose.\\3${numberChooser}`).innerText;console.log("selected "+selectedNumber)}
-const numberColorApplier=(j)=>{for(let i=1;i<10;i++){if(i==j){document.querySelector(`div.choose.\\3${i}`).style.backgroundColor = "black";document.querySelector(`div.choose.\\3${i}`).style.color = "white";}else{document.querySelector(`div.choose.\\3${i}`).style.backgroundColor = "white";document.querySelector(`div.choose.\\3${i}`).style.color = "black";}}}
+const numberColorApplier=(j)=>{for(let i=1;i<10;i++){if(i==j){document.querySelector(`div.choose.\\3${i}`).style.backgroundColor = "black";document.querySelector(`div.choose.\\3${i}`).style.color = "white";}else{document.querySelector(`div.choose.\\3${i}`).style.backgroundColor = ''}}}
 document.querySelector("div.choose.\\31").addEventListener("click",()=>{numberSelector(1);numberColorApplier(1)})
 document.querySelector("div.choose.\\32").addEventListener("click",()=>{numberSelector(2);numberColorApplier(2)})
 document.querySelector("div.choose.\\33").addEventListener("click",()=>{numberSelector(3);numberColorApplier(3)})
