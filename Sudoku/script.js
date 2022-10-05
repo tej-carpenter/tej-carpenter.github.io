@@ -1,18 +1,20 @@
-let selectedNumber=''
-const numberSelector=(numberChooser)=>{selectedNumber=document.querySelector(`div.choose.\\3${numberChooser}`).innerText;console.log("selected "+selectedNumber)}
-const numberColorApplier=(j)=>{for(let i=1;i<10;i++){if(i==j){document.querySelector(`div.choose.\\3${i}`).style.backgroundColor = "black";document.querySelector(`div.choose.\\3${i}`).style.color = "white";}else{document.querySelector(`div.choose.\\3${i}`).style = ''}}}
-document.querySelector("div.choose.\\31").addEventListener("click",()=>{numberSelector(1);numberColorApplier(1)})
-document.querySelector("div.choose.\\32").addEventListener("click",()=>{numberSelector(2);numberColorApplier(2)})
-document.querySelector("div.choose.\\33").addEventListener("click",()=>{numberSelector(3);numberColorApplier(3)})
-document.querySelector("div.choose.\\34").addEventListener("click",()=>{numberSelector(4);numberColorApplier(4)})
-document.querySelector("div.choose.\\35").addEventListener("click",()=>{numberSelector(5);numberColorApplier(5)})
-document.querySelector("div.choose.\\36").addEventListener("click",()=>{numberSelector(6);numberColorApplier(6)})
-document.querySelector("div.choose.\\37").addEventListener("click",()=>{numberSelector(7);numberColorApplier(7)})
-document.querySelector("div.choose.\\38").addEventListener("click",()=>{numberSelector(8);numberColorApplier(8)})
-document.querySelector("div.choose.\\39").addEventListener("click",()=>{numberSelector(9);numberColorApplier(9)})
-
-let boxNumber,numBoxNumber
-const numberWriter=(boxNumber,numBoxNumber)=>{ document.querySelector(`div.box.\\3${boxNumber} th>div.num-box:nth-child(${numBoxNumber})`).innerText=selectedNumber}
+let selectedNumber = '';
+const numberSelector = (numberChooser) => {selectedNumber = document.querySelector(`div.choose.\\3${numberChooser}`).innerText;console.log("selected " + selectedNumber)}
+const numberColorApplier = (j) => {
+  for (let i = 1; i < 10; i++) {
+    if (i == j) {document.querySelector(`div.choose.\\3${i}`).style.backgroundColor = "black";document.querySelector(`div.choose.\\3${i}`).style.color = "white";document.querySelector("#eraser").style=''}
+    else {document.querySelector(`div.choose.\\3${i}`).style = ''}}}
+document.querySelector("div.choose.\\31").addEventListener("click",()=>{numberSelector(1);numberColorApplier(1);})
+document.querySelector("div.choose.\\32").addEventListener("click",()=>{numberSelector(2);numberColorApplier(2);})
+document.querySelector("div.choose.\\33").addEventListener("click",()=>{numberSelector(3);numberColorApplier(3);})
+document.querySelector("div.choose.\\34").addEventListener("click",()=>{numberSelector(4);numberColorApplier(4);})
+document.querySelector("div.choose.\\35").addEventListener("click",()=>{numberSelector(5);numberColorApplier(5);})
+document.querySelector("div.choose.\\36").addEventListener("click",()=>{numberSelector(6);numberColorApplier(6);})
+document.querySelector("div.choose.\\37").addEventListener("click",()=>{numberSelector(7);numberColorApplier(7);})
+document.querySelector("div.choose.\\38").addEventListener("click",()=>{numberSelector(8);numberColorApplier(8);})
+document.querySelector("div.choose.\\39").addEventListener("click",()=>{numberSelector(9);numberColorApplier(9);})
+let boxNumber, numBoxNumber;
+const numberWriter = (boxNumber, numBoxNumber) => {  document.querySelector(`div.box.\\3${boxNumber} th > div.num-box:nth-child(${numBoxNumber})`).innerText = selectedNumber  }
 document.querySelector("div.box.\\31 th>div:nth-child(1)").addEventListener("click",()=>{numberWriter(1,1)});document.querySelector("div.box.\\31 th>div:nth-child(2)").addEventListener("click",()=>{numberWriter(1,2)});document.querySelector("div.box.\\31 th>div:nth-child(3)").addEventListener("click",()=>{numberWriter(1,3)});document.querySelector("div.box.\\31 th>div:nth-child(4)").addEventListener("click",()=>{numberWriter(1,4)});document.querySelector("div.box.\\31 th>div:nth-child(6)").addEventListener("click",()=>{numberWriter(1,6)});document.querySelector("div.box.\\31 th>div:nth-child(8)").addEventListener("click",()=>{numberWriter(1,8)});document.querySelector("div.box.\\31 th>div:nth-child(9)").addEventListener("click",()=>{numberWriter(1,9)})// 1st box
 document.querySelector("div.box.\\32 th>div:nth-child(2)").addEventListener("click",()=>{numberWriter(2,2)});document.querySelector("div.box.\\32 th>div:nth-child(3)").addEventListener("click",()=>{numberWriter(2,3)});document.querySelector("div.box.\\32 th>div:nth-child(7)").addEventListener("click",()=>{numberWriter(2,7)});document.querySelector("div.box.\\32 th>div:nth-child(9)").addEventListener("click",()=>{numberWriter(2,9)}) // 2nd box
 document.querySelector("div.box.\\33 th>div:nth-child(3)").addEventListener("click",()=>{numberWriter(3,3)});document.querySelector("div.box.\\33 th>div:nth-child(4)").addEventListener("click",()=>{numberWriter(3,4)});document.querySelector("div.box.\\33 th>div:nth-child(5)").addEventListener("click",()=>{numberWriter(3,5)});document.querySelector("div.box.\\33 th>div:nth-child(6)").addEventListener("click",()=>{numberWriter(3,6)});document.querySelector("div.box.\\33 th>div:nth-child(7)").addEventListener("click",()=>{numberWriter(3,7)});document.querySelector("div.box.\\33 th>div:nth-child(8)").addEventListener("click",()=>{numberWriter(3,8)});document.querySelector("div.box.\\33 th>div:nth-child(9)").addEventListener("click",()=>{numberWriter(3,9)})// 3rd box
@@ -22,7 +24,5 @@ document.querySelector("div.box.\\36 th>div:nth-child(1)").addEventListener("cli
 document.querySelector("div.box.\\37 th>div:nth-child(1)").addEventListener("click",()=>{numberWriter(7,1)});document.querySelector("div.box.\\37 th>div:nth-child(3)").addEventListener("click",()=>{numberWriter(7,3)});document.querySelector("div.box.\\37 th>div:nth-child(4)").addEventListener("click",()=>{numberWriter(7,4)});document.querySelector("div.box.\\37 th>div:nth-child(5)").addEventListener("click",()=>{numberWriter(7,5)});document.querySelector("div.box.\\37 th>div:nth-child(6)").addEventListener("click",()=>{numberWriter(7,6)});document.querySelector("div.box.\\37 th>div:nth-child(7)").addEventListener("click",()=>{numberWriter(7,7)});document.querySelector("div.box.\\37 th>div:nth-child(8)").addEventListener("click",()=>{numberWriter(7,8)})// 7th box
 document.querySelector("div.box.\\38 th>div:nth-child(5)").addEventListener("click",()=>{numberWriter(8,5)});document.querySelector("div.box.\\38 th>div:nth-child(6)").addEventListener("click",()=>{numberWriter(8,6)});document.querySelector("div.box.\\38 th>div:nth-child(7)").addEventListener("click",()=>{numberWriter(8,7)});document.querySelector("div.box.\\38 th>div:nth-child(8)").addEventListener("click",()=>{numberWriter(8,8)});document.querySelector("div.box.\\38 th>div:nth-child(9)").addEventListener("click",()=>{numberWriter(8,9)}) // 8th box
 document.querySelector("div.box.\\39 th>div:nth-child(1)").addEventListener("click",()=>{numberWriter(9,1)});document.querySelector("div.box.\\39 th>div:nth-child(2)").addEventListener("click",()=>{numberWriter(9,2)});document.querySelector("div.box.\\39 th>div:nth-child(3)").addEventListener("click",()=>{numberWriter(9,3)});document.querySelector("div.box.\\39 th>div:nth-child(6)").addEventListener("click",()=>{numberWriter(9,6)});document.querySelector("div.box.\\39 th>div:nth-child(7)").addEventListener("click",()=>{numberWriter(9,7)});document.querySelector("div.box.\\39 th>div:nth-child(8)").addEventListener("click",()=>{numberWriter(9,8)}) // 9th box
-
-document.querySelector("button#eraser").addEventListener("click",()=>{selectedNumber='';numberColorApplier(0)})
-
+document.querySelector("button#eraser").addEventListener("click",()=>{selectedNumber='';numberColorApplier(0);document.querySelector("#eraser").style.backgroundColor='#00286d'})
 document.querySelector("#replay").addEventListener("click",()=>{for(let i=1;i<10;i++){for(let j=1;j<10;j++){if(document.querySelector(`div.box:nth-child(${i}) > div.toFill:nth-child(${j})`) != null){document.querySelector(`div.box:nth-child(${i}) > div.toFill:nth-child(${j})`).innerText = '';selectedNumber='';console.clear();numberColorApplier();}}}})
