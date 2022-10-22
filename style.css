@@ -437,16 +437,8 @@ div.info > ul > li {
     .row {
         flex-direction: column;
     }
-
-    .side,
-    .side2,
-    .main {
-        width: 100%;
-    }
-
-    #profile-image {
-        width: 60px;
-    }
+    .side,.side2,.main {width: 100%;}
+    ul{padding: 0 0 0 10px;}
 
     .header {
         font-size: 20px;
@@ -482,6 +474,10 @@ div.info > ul > li {
         float: none;
         width: 95%;
     }
+    #normal-image{
+        height:100px;
+        width:100px;
+    }
 
     pre {
         width: 95%;
@@ -490,9 +486,5 @@ div.info > ul > li {
 
     textarea,input {
         width: 60%;
-    }
-
-    iframe {
-        text-size-adjust: inherit;
     }
 }
